@@ -44,6 +44,7 @@
 		04560932251D830600E5F975 /* KNLanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNLanguageManager.m; sourceTree = "<group>"; };
 		0456093F251D8F1D00E5F975 /* KNchangeRootVCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNchangeRootVCTool.h; sourceTree = "<group>"; };
 		04560940251D8F1D00E5F975 /* KNchangeRootVCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNchangeRootVCTool.m; sourceTree = "<group>"; };
+		04560946251DA21000E5F975 /* messier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = messier.framework; sourceTree = "<group>"; };
 		1FA7E967B7A9C2AADB8E6ABE /* libPods-iUIPageControlFix4iOS14.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iUIPageControlFix4iOS14.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE39AEF2D3BE397AF13206A /* Pods-iUIPageControlFix4iOS14.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iUIPageControlFix4iOS14.debug.xcconfig"; path = "Target Support Files/Pods-iUIPageControlFix4iOS14/Pods-iUIPageControlFix4iOS14.debug.xcconfig"; sourceTree = "<group>"; };
 		A16CF6C4961D28453F99ED72 /* Pods-iUIPageControlFix4iOS14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iUIPageControlFix4iOS14.release.xcconfig"; path = "Target Support Files/Pods-iUIPageControlFix4iOS14/Pods-iUIPageControlFix4iOS14.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		0416A866251C42E600BD177C /* iUIPageControlFix4iOS14 */ = {
 			isa = PBXGroup;
 			children = (
+				04560945251DA1FE00E5F975 /* messier */,
 				0456093E251D8F0800E5F975 /* tool */,
 				0456093C251D8CEB00E5F975 /* main */,
 				04560930251D82F500E5F975 /* LanguageManager */,
@@ -150,6 +152,14 @@
 				04560940251D8F1D00E5F975 /* KNchangeRootVCTool.m */,
 			);
 			path = tool;
+			sourceTree = "<group>";
+		};
+		04560945251DA1FE00E5F975 /* messier */ = {
+			isa = PBXGroup;
+			children = (
+				04560946251DA21000E5F975 /* messier.framework */,
+			);
+			path = messier;
 			sourceTree = "<group>";
 		};
 		36D57458B043AE5E715E96D7 /* Frameworks */ = {
@@ -432,7 +442,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 249PMS4KB9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iUIPageControlFix4iOS14/messier",
+				);
 				INFOPLIST_FILE = iUIPageControlFix4iOS14/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +467,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 249PMS4KB9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iUIPageControlFix4iOS14/messier",
+				);
 				INFOPLIST_FILE = iUIPageControlFix4iOS14/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

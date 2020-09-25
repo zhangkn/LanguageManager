@@ -64,9 +64,14 @@
     
     
     
+    if (@available(iOS 13.0, *)) {
 
     
+    
     [self testUIPageControl];
+        
+    }
+    
 }
 
 
