@@ -9,6 +9,10 @@
 
 #import "AppDelegate.h"
 
+
+extern CFAbsoluteTime startTime4main;
+
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +26,11 @@
     
     [self setupwindow];//
     
+
+    
+    double launchTime = CFAbsoluteTimeGetCurrent() -startTime4main;
+    NSLog(@"%@", [NSString stringWithFormat:@"launchTime %@",[NSNumber numberWithDouble:launchTime ]]);
+//    2020-09-25 17:12:54.531289+0800 iUIPageControlFix4iOS14[14126:917050] launchTime 0.09584593772888184
 
     
     return YES;

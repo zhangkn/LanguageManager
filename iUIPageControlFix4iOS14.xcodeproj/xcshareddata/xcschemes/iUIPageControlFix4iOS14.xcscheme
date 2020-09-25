@@ -52,18 +52,13 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "MessierEnableOnAppBoot"
-            value = "false"
+            key = "DYLD_PRINT_STATISTICS"
+            value = "1"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
-            key = "MessierInlineHook"
-            value = "false"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "MessierMainThreadMethodsOnly"
-            value = "false"
+            key = "DYLD_PRINT_INITIALIZERS"
+            value = ""
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

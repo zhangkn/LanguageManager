@@ -448,7 +448,7 @@
 					"$(PROJECT_DIR)/iUIPageControlFix4iOS14/messier",
 				);
 				INFOPLIST_FILE = iUIPageControlFix4iOS14/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +473,7 @@
 					"$(PROJECT_DIR)/iUIPageControlFix4iOS14/messier",
 				);
 				INFOPLIST_FILE = iUIPageControlFix4iOS14/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
